@@ -1,8 +1,8 @@
 package presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
-import data.model.GameState
-import domain.TicTacToeUseCase
+import data.repository.model.tictactoe.model.GameState
+import domain.tictactoe.TicTacToeUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 

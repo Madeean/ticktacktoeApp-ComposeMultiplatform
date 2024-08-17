@@ -20,7 +20,8 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun HomeScreen(
-  navigateToTictactoeScreen: (isCreateNewGame: Boolean) -> Unit
+  navigateToTictactoeScreen: (isCreateNewGame: Boolean) -> Unit,
+  navigateToHistoryScreen: () -> Unit
 ) {
   Scaffold(
     modifier = Modifier.fillMaxSize()
@@ -51,6 +52,14 @@ fun HomeScreen(
         }
       ){
         Text("Continue Previous Game")
+      }
+      Spacer(modifier = Modifier.height(20.dp))
+      Button(
+        onClick = {
+          navigateToHistoryScreen()
+        }
+      ){
+        Text("History")
       }
     }
   }

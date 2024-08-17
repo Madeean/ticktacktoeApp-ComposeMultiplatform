@@ -8,6 +8,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.koin.compose.KoinContext
 import org.koin.compose.currentKoinScope
 import presentation.navigations.SetupNavigation
+import presentation.viewmodel.HistoryViewModel
 import presentation.viewmodel.TicTacToeViewModel
 
 @Composable
@@ -17,10 +18,12 @@ fun App() {
     MaterialTheme {
         KoinContext {
             val viewModel = koinViewModel<TicTacToeViewModel>()
+            val historyViewModel = koinViewModel<HistoryViewModel>()
             navController = rememberNavController()
             SetupNavigation(
                 navController = navController,
-                ticTacToeViewModel = viewModel
+                ticTacToeViewModel = viewModel,
+                historyViewModel = historyViewModel
             )
         }
     }

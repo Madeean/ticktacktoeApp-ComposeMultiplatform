@@ -7,11 +7,13 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import presentation.tictactoe.TicTacToeScreen
 import presentation.utils.ConstantNavigator
+import presentation.viewmodel.HistoryViewModel
 import presentation.viewmodel.TicTacToeViewModel
 
 fun NavGraphBuilder.TictactoeComposable(
   viewModel: TicTacToeViewModel,
-  navController: NavController
+  navController: NavController,
+  historyViewModel: HistoryViewModel,
 ){
   composable(
     route = ConstantNavigator.TICTACTOE_SCREEN,
@@ -23,7 +25,8 @@ fun NavGraphBuilder.TictactoeComposable(
     TicTacToeScreen(
       viewModel,
       isCreateNewGame,
-      navController
+      navController,
+      historyViewModel
     )
   }
 }

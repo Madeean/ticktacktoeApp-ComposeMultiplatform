@@ -6,13 +6,15 @@ import presentation.home.HomeScreen
 import presentation.utils.ConstantNavigator
 
 fun NavGraphBuilder.HomeComposable(
-  navigateToTictactoeScreen: (isCreateNewGame: Boolean) -> Unit
+  navigateToTictactoeScreen: (isCreateNewGame: Boolean) -> Unit,
+  navigateToHistoryScreen: () -> Unit
 ){
   composable(
     route = ConstantNavigator.HOME_SCREEN,
   ){
     HomeScreen(
-      navigateToTictactoeScreen
+      navigateToTictactoeScreen,
+      navigateToHistoryScreen
     )
   }
 }

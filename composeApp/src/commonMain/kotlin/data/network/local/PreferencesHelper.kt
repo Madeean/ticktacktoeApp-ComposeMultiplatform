@@ -2,7 +2,7 @@ package data.network.local
 
 import com.russhwolf.settings.Settings
 import com.russhwolf.settings.set
-import data.model.GameState
+import data.repository.model.tictactoe.model.GameState
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 

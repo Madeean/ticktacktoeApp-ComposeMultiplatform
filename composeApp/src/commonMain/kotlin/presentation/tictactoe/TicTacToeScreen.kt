@@ -21,17 +21,34 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import domain.history.model.HistoryDomainDraft
+import presentation.utils.getFormattedDateTime
+import presentation.viewmodel.HistoryViewModel
 import presentation.viewmodel.TicTacToeViewModel
 
 @Composable
-fun TicTacToeScreen (viewModel: TicTacToeViewModel, isCreateNewGame: Boolean, navController: NavController) {
+fun TicTacToeScreen(
+  viewModel: TicTacToeViewModel,
+  isCreateNewGame: Boolean,
+  navController: NavController,
+  historyViewModel: HistoryViewModel
+) {
   val gameState by viewModel.gameState.collectAsState()
 
   LaunchedEffect(key1 = true) {
-    if(isCreateNewGame) viewModel.resetGame() else viewModel.getOngoingGame()
+    if (isCreateNewGame) viewModel.resetGame() else viewModel.getOngoingGame()
   }
 
   if (gameState.isGameOver) {
+    LaunchedEffect(key1 = true) {
+      val formattedDateTime = getFormattedDateTime()
+      historyViewModel.setHistory(
+        HistoryDomainDraft(
+          title = if (gameState.isDraw) "It's a Draw!" else "${gameState.winner} Wins!",
+          dateTime = formattedDateTime
+        )
+      )
+    }
     AlertDialog(
       onDismissRequest = { },
       title = {
@@ -46,9 +63,9 @@ fun TicTacToeScreen (viewModel: TicTacToeViewModel, isCreateNewGame: Boolean, na
   }
 
   Column(
-  horizontalAlignment = Alignment.CenterHorizontally,
-  verticalArrangement = Arrangement.Center,
-  modifier = Modifier.fillMaxSize()
+    horizontalAlignment = Alignment.CenterHorizontally,
+    verticalArrangement = Arrangement.Center,
+    modifier = Modifier.fillMaxSize()
   ) {
     Text(text = "Player ${if (gameState.currentPlayer == "X") "1" else "2"}'s Turn")
 
@@ -60,7 +77,10 @@ fun TicTacToeScreen (viewModel: TicTacToeViewModel, isCreateNewGame: Boolean, na
         horizontalArrangement = Arrangement.SpaceBetween
       ) {
         row.forEachIndexed { y, cell ->
-          OutlinedButton(onClick = { viewModel.makeMove(x, y) }, modifier = Modifier.size(100.dp).padding(5.dp)) {
+          OutlinedButton(
+            onClick = { viewModel.makeMove(x, y) },
+            modifier = Modifier.size(100.dp).padding(5.dp)
+          ) {
             Text(text = cell)
           }
         }
@@ -73,7 +93,7 @@ fun TicTacToeScreen (viewModel: TicTacToeViewModel, isCreateNewGame: Boolean, na
       modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
       horizontalArrangement = Arrangement.SpaceBetween
     ) {
-      OutlinedButton(onClick = { navController.navigateUp()}) {
+      OutlinedButton(onClick = { navController.navigateUp() }) {
         Text(text = "Back")
       }
       Button(onClick = { viewModel.resetGame() }) {

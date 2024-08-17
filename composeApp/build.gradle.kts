@@ -56,6 +56,9 @@ kotlin {
             implementation(libs.navigation.compose)
             implementation(libs.cmp.preference)
             implementation(libs.multiplatform.settings)
+
+            implementation(libs.compottie)
+            implementation(libs.kotlinx.datetime)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
