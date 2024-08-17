@@ -19,8 +19,4 @@ class PreferencesHelper(private val settings: Settings) {
     val jsonString = settings.getStringOrNull(gameStateKey)
     return jsonString?.let { Json.decodeFromString<GameState>(it) }
   }
-
-  fun clearGameState() {
-    settings.remove(gameStateKey)
-  }
 }
