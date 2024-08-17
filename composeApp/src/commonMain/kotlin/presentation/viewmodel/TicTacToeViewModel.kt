@@ -23,4 +23,8 @@ class TicTacToeViewModel(
     resetGameUseCase.execute()
     _gameState.value = GameState()
   }
+
+  fun getOngoingGame() {
+    _gameState.value = makeMoveUseCase.getGameOngoing()
+  }
 }

@@ -48,4 +48,8 @@ class MakeMoveUseCase(private val repository: TicTacToeRepository) {
     return lines.firstOrNull { it.all { cell -> cell == "X" } }?.firstOrNull()
       ?: lines.firstOrNull { it.all { cell -> cell == "O" } }?.firstOrNull()
   }
+
+  fun getGameOngoing(): GameState {
+    return repository.getGameState()
+  }
 }

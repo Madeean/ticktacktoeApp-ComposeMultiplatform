@@ -11,6 +11,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -21,6 +22,10 @@ import presentation.viewmodel.TicTacToeViewModel
 @Composable
 fun TicTacToeApp(viewModel: TicTacToeViewModel) {
     val gameState by viewModel.gameState.collectAsState()
+
+    LaunchedEffect(key1 = true) {
+        viewModel.getOngoingGame()
+    }
 
     // Show a modal dialog if the game is over
     if (gameState.isGameOver) {
