@@ -54,6 +54,8 @@ kotlin {
             implementation(libs.lifecycle.viewmodel.compose)
 
             implementation(libs.navigation.compose)
+            implementation("network.chaintech:cmp-preference:1.0.0")
+            implementation("com.russhwolf:multiplatform-settings:0.8.1")
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)

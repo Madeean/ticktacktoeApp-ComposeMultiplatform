@@ -6,5 +6,6 @@ import domain.repository.TicTacToeRepository
 class ResetGameUseCase(private val repository: TicTacToeRepository) {
   fun execute() {
     repository.updateGameState(GameState())
+//    repository.clearGameState()
   }
 }

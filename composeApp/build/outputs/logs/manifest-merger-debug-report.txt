@@ -21,6 +21,7 @@ MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/madereihan/.gradle/cac
 MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/madereihan/.gradle/caches/transforms-4/f79071fce20e1350fcb55e8587213e4f/transformed/material3-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-compose:1.9.0] /Users/madereihan/.gradle/caches/transforms-4/1b252acdcf48642835319c8a1e3aea6a/transformed/activity-compose-1.9.0/AndroidManifest.xml:2:1-7:12
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.6.10] /Users/madereihan/.gradle/caches/transforms-4/dbe465ca8d29388e72b0518e874371b7/transformed/library-release/AndroidManifest.xml:2:1-7:12
+MERGED from [network.chaintech:cmp-preference-android:1.0.0] /Users/madereihan/.gradle/caches/transforms-4/04d1273bf335ae47beac68bb50f74b70/transformed/CMPPreference-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-ripple-android:1.6.7] /Users/madereihan/.gradle/caches/transforms-4/7ee75ca4804e261220fc2a51d1eb1246/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] /Users/madereihan/.gradle/caches/transforms-4/0f2388c2d357fc9d6a5a040830037637/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-android:1.6.7] /Users/madereihan/.gradle/caches/transforms-4/a7f0dd07d1d85d9ba9693cd3cc4e2a1a/transformed/material-release/AndroidManifest.xml:2:1-7:12
@@ -72,6 +73,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/madereihan/.gradle/c
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/madereihan/.gradle/caches/transforms-4/3492ea1f8eefb8cab3561ceb19ad97d8/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/madereihan/.gradle/caches/transforms-4/d7fd81b99888d567170a673fa6af0156/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/madereihan/.gradle/caches/transforms-4/5781db5ec84af5d17a365bb2fc136859/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:0.8.1] /Users/madereihan/.gradle/caches/transforms-4/109290bff7b25c74e41d68a4d37956f0/transformed/multiplatform-settings-debug/AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from /Volumes/Data/Data/Android/Porject/KMM/TicTacToeApp/composeApp/src/androidMain/AndroidManifest.xml
 	android:versionName
@@ -173,6 +175,8 @@ MERGED from [androidx.activity:activity-compose:1.9.0] /Users/madereihan/.gradle
 MERGED from [androidx.activity:activity-compose:1.9.0] /Users/madereihan/.gradle/caches/transforms-4/1b252acdcf48642835319c8a1e3aea6a/transformed/activity-compose-1.9.0/AndroidManifest.xml:5:5-44
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.6.10] /Users/madereihan/.gradle/caches/transforms-4/dbe465ca8d29388e72b0518e874371b7/transformed/library-release/AndroidManifest.xml:5:5-44
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.6.10] /Users/madereihan/.gradle/caches/transforms-4/dbe465ca8d29388e72b0518e874371b7/transformed/library-release/AndroidManifest.xml:5:5-44
+MERGED from [network.chaintech:cmp-preference-android:1.0.0] /Users/madereihan/.gradle/caches/transforms-4/04d1273bf335ae47beac68bb50f74b70/transformed/CMPPreference-release/AndroidManifest.xml:5:5-44
+MERGED from [network.chaintech:cmp-preference-android:1.0.0] /Users/madereihan/.gradle/caches/transforms-4/04d1273bf335ae47beac68bb50f74b70/transformed/CMPPreference-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-ripple-android:1.6.7] /Users/madereihan/.gradle/caches/transforms-4/7ee75ca4804e261220fc2a51d1eb1246/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-ripple-android:1.6.7] /Users/madereihan/.gradle/caches/transforms-4/7ee75ca4804e261220fc2a51d1eb1246/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] /Users/madereihan/.gradle/caches/transforms-4/0f2388c2d357fc9d6a5a040830037637/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
@@ -275,6 +279,8 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/madereihan/.gradle
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/madereihan/.gradle/caches/transforms-4/d7fd81b99888d567170a673fa6af0156/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/madereihan/.gradle/caches/transforms-4/5781db5ec84af5d17a365bb2fc136859/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/madereihan/.gradle/caches/transforms-4/5781db5ec84af5d17a365bb2fc136859/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:0.8.1] /Users/madereihan/.gradle/caches/transforms-4/109290bff7b25c74e41d68a4d37956f0/transformed/multiplatform-settings-debug/AndroidManifest.xml:20:5-44
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:0.8.1] /Users/madereihan/.gradle/caches/transforms-4/109290bff7b25c74e41d68a4d37956f0/transformed/multiplatform-settings-debug/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
 		INJECTED from /Volumes/Data/Data/Android/Porject/KMM/TicTacToeApp/composeApp/src/androidMain/AndroidManifest.xml
 	android:minSdkVersion

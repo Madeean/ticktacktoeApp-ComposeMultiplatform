@@ -8,5 +8,6 @@ class MyApp: Application() {
   override fun onCreate() {
     super.onCreate()
     KoinInitializer(applicationContext).init()
+    AppContext.setUp(applicationContext)
   }
 }

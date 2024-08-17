@@ -1,5 +1,8 @@
 package di
 
+import PreferencesHelper
+import SettingsFactory
+import com.russhwolf.settings.Settings
 import data.repository.TicTacToeRepositoryImpl
 import domain.repository.TicTacToeRepository
 import domain.usecase.MakeMoveUseCase
@@ -9,8 +12,10 @@ import presentation.viewmodel.TicTacToeViewModel
 
 val appModule = module {
 
-  single<TicTacToeRepository> { TicTacToeRepositoryImpl() }
+  single<Settings> { SettingsFactory.create() }
+  single { PreferencesHelper(get()) }
+  single<TicTacToeRepository> { TicTacToeRepositoryImpl(get()) }
   factory { MakeMoveUseCase(get()) }
   factory { ResetGameUseCase(get()) }
-  factory { TicTacToeViewModel(get(), get()) }
+  single { TicTacToeViewModel(get(), get()) }
 }
