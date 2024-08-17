@@ -1,3 +1,5 @@
+package utils
+
 import platform.UIKit.UIDevice
 
 class IOSPlatform: Platform {

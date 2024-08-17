@@ -1,8 +1,8 @@
-import android.content.Context
+package utils
+
 import android.preference.PreferenceManager
 import com.russhwolf.settings.AndroidSettings
 import com.russhwolf.settings.Settings
-
 
 actual object SettingsFactory {
 

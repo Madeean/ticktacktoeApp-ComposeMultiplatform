@@ -1,7 +1,8 @@
 package com.madeean.tictactoeapp
 
-import KoinInitializer
+import utils.KoinInitializer
 import android.app.Application
+import utils.AppContext
 
 class MyApp: Application() {
 

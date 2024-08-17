@@ -1,7 +1,9 @@
-import org.koin.androidx.viewmodel.dsl.viewModelOf
+package utils
+
+import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
 import presentation.viewmodel.TicTacToeViewModel
 
 actual val viewModelModule = module {
-  viewModelOf(::TicTacToeViewModel)
+  singleOf(::TicTacToeViewModel)
 }

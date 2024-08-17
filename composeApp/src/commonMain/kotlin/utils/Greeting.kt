@@ -1,3 +1,5 @@
+package utils
+
 class Greeting {
     private val platform = getPlatform()
 

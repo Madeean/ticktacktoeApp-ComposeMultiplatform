@@ -1,6 +1,6 @@
 package data.repository
 
-import PreferencesHelper
+import data.network.local.PreferencesHelper
 import data.model.GameState
 import domain.repository.TicTacToeRepository
 

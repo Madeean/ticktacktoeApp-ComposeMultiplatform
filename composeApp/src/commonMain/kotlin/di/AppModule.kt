@@ -1,7 +1,7 @@
 package di
 
-import PreferencesHelper
-import SettingsFactory
+import data.network.local.PreferencesHelper
+import utils.SettingsFactory
 import com.russhwolf.settings.Settings
 import data.repository.TicTacToeRepositoryImpl
 import domain.repository.TicTacToeRepository

@@ -1,3 +1,5 @@
+package utils
+
 import android.os.Build
 
 class AndroidPlatform : Platform {
